@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		694ED068288050090015D69C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694ED067288050090015D69C /* AppDelegate.swift */; };
 		694ED06A288050090015D69C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694ED069288050090015D69C /* SceneDelegate.swift */; };
-		694ED06C288050090015D69C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694ED06B288050090015D69C /* ViewController.swift */; };
+		694ED06C288050090015D69C /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694ED06B288050090015D69C /* FirstScreen.swift */; };
 		694ED06F288050090015D69C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694ED06D288050090015D69C /* Main.storyboard */; };
 		694ED0712880500A0015D69C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694ED0702880500A0015D69C /* Assets.xcassets */; };
 		694ED0742880500A0015D69C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694ED0722880500A0015D69C /* LaunchScreen.storyboard */; };
+		694ED07C288050BC0015D69C /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694ED07B288050BC0015D69C /* SecondScreen.swift */; };
+		694ED07E288050D70015D69C /* ThirdScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694ED07D288050D70015D69C /* ThirdScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		694ED064288050090015D69C /* SimplyMortgageApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimplyMortgageApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		694ED067288050090015D69C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		694ED069288050090015D69C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		694ED06B288050090015D69C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		694ED06B288050090015D69C /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
 		694ED06E288050090015D69C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		694ED0702880500A0015D69C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		694ED0732880500A0015D69C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		694ED0752880500A0015D69C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		694ED07B288050BC0015D69C /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
+		694ED07D288050D70015D69C /* ThirdScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				694ED067288050090015D69C /* AppDelegate.swift */,
 				694ED069288050090015D69C /* SceneDelegate.swift */,
-				694ED06B288050090015D69C /* ViewController.swift */,
+				694ED06B288050090015D69C /* FirstScreen.swift */,
+				694ED07B288050BC0015D69C /* SecondScreen.swift */,
+				694ED07D288050D70015D69C /* ThirdScreen.swift */,
 				694ED06D288050090015D69C /* Main.storyboard */,
 				694ED0702880500A0015D69C /* Assets.xcassets */,
 				694ED0722880500A0015D69C /* LaunchScreen.storyboard */,
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				694ED06C288050090015D69C /* ViewController.swift in Sources */,
+				694ED06C288050090015D69C /* FirstScreen.swift in Sources */,
+				694ED07C288050BC0015D69C /* SecondScreen.swift in Sources */,
+				694ED07E288050D70015D69C /* ThirdScreen.swift in Sources */,
 				694ED068288050090015D69C /* AppDelegate.swift in Sources */,
 				694ED06A288050090015D69C /* SceneDelegate.swift in Sources */,
 			);
