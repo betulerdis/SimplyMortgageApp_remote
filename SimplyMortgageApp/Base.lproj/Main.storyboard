@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qJI-rW-YCh">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -11,13 +11,13 @@
         <!--First Screen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FirstScreen" customModule="SimplyMortgageApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstVC" id="BYZ-38-t0r" customClass="FirstScreen" customModule="SimplyMortgageApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2J5-cA-iyg">
-                                <rect key="frame" x="30" y="150" width="343" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2J5-cA-iyg">
+                                <rect key="frame" x="30" y="194" width="343" height="30"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Mortgage Payment Calculator">
                                         <attributes>
@@ -29,8 +29,8 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85y-9b-jFR">
-                                <rect key="frame" x="30" y="211" width="349" height="15"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85y-9b-jFR">
+                                <rect key="frame" x="30" y="247" width="349" height="37.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Quickly See What Your Mortgage Payment Might Look Like">
                                         <attributes>
@@ -41,8 +41,8 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1l-Be-ix0">
-                                <rect key="frame" x="30" y="338" width="157.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1l-Be-ix0">
+                                <rect key="frame" x="30" y="397.5" width="158" height="20.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Mortgage Amount $:">
                                         <attributes>
@@ -54,41 +54,36 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField toolTip="Enter amount" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d3n-ga-Zds">
-                                <rect key="frame" x="30" y="411" width="310" height="45"/>
+                                <rect key="frame" x="30" y="431" width="310" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="A1T-OZ-54C"/>
                                     <constraint firstAttribute="width" constant="310" id="vyn-gd-hY6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="amountEntered:" destination="BYZ-38-t0r" eventType="editingChanged" id="ec7-E8-ycd"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUo-L8-yMG">
-                                <rect key="frame" x="90.5" y="623" width="233" height="39"/>
+                                <rect key="frame" x="90.5" y="643" width="233" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="233" id="XDa-HI-dFh"/>
                                     <constraint firstAttribute="height" constant="39" id="p2q-aU-1eU"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule" titleAlignment="center">
+                                <buttonConfiguration key="configuration" style="filled" title="Calculate" cornerStyle="capsule" titleAlignment="center">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </backgroundConfiguration>
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Calculate">
-                                            <attributes>
-                                                <font key="NSFont" size="22" name="Georgia"/>
-                                                <font key="NSOriginalFont" size="18" name="Georgia"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <fontDescription key="titleFontDescription" name="Georgia" family="Georgia" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Co2-0S-Jbk" kind="show" id="iye-Iy-67E"/>
+                                    <segue destination="Co2-0S-Jbk" kind="show" identifier="runCalculation" id="pad-8a-Pz8"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly payment is calculated at a 5-year fixed  interest rate of 5.340%, amortized over 25 years." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyu-F7-oG4">
-                                <rect key="frame" x="30" y="464" width="349" height="71"/>
+                                <rect key="frame" x="30" y="484" width="349" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="349" id="GBx-cr-2f7"/>
                                     <constraint firstAttribute="height" constant="71" id="poA-Wy-w23"/>
@@ -97,17 +92,21 @@
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Simply2" translatesAutoresizingMaskIntoConstraints="NO" id="thv-cE-nwo">
+                                <rect key="frame" x="118" y="785" width="172" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2J5-cA-iyg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="BqV-dN-Niv"/>
+                            <constraint firstItem="2J5-cA-iyg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="106" id="BqV-dN-Niv"/>
                             <constraint firstItem="85y-9b-jFR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="GMS-wL-aYB"/>
                             <constraint firstItem="SUo-L8-yMG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J0a-xD-vWH"/>
-                            <constraint firstItem="f1l-Be-ix0" firstAttribute="top" secondItem="85y-9b-jFR" secondAttribute="bottom" constant="112" id="Lg4-d1-1m2"/>
+                            <constraint firstItem="f1l-Be-ix0" firstAttribute="top" secondItem="85y-9b-jFR" secondAttribute="bottom" constant="113" id="Lg4-d1-1m2"/>
                             <constraint firstItem="qyu-F7-oG4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="RdU-zt-s6v"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SUo-L8-yMG" secondAttribute="bottom" constant="180" id="SdY-rl-FES"/>
-                            <constraint firstItem="85y-9b-jFR" firstAttribute="top" secondItem="2J5-cA-iyg" secondAttribute="bottom" constant="31" id="bhk-Gl-jhK"/>
+                            <constraint firstItem="85y-9b-jFR" firstAttribute="top" secondItem="2J5-cA-iyg" secondAttribute="bottom" constant="23" id="bhk-Gl-jhK"/>
                             <constraint firstItem="qyu-F7-oG4" firstAttribute="top" secondItem="d3n-ga-Zds" secondAttribute="bottom" constant="8" symbolic="YES" id="g4T-74-5zb"/>
                             <constraint firstItem="f1l-Be-ix0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="g7Z-RI-Yt5"/>
                             <constraint firstItem="d3n-ga-Zds" firstAttribute="top" secondItem="f1l-Be-ix0" secondAttribute="bottom" constant="13" id="iq7-14-R04"/>
@@ -124,69 +123,43 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-561" y="92"/>
+            <point key="canvasLocation" x="-541" y="229"/>
         </scene>
-        <!--Second Screen-->
+        <!--Details-->
         <scene sceneID="u1D-If-1Zh">
             <objects>
-                <viewController storyboardIdentifier="SecondScreen" id="Co2-0S-Jbk" customClass="SecondScreen" customModule="SimplyMortgageApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondVC" id="Co2-0S-Jbk" customClass="SecondScreen" customModule="SimplyMortgageApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nDp-l3-nfd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYB-sU-0J8">
-                                <rect key="frame" x="109.5" y="643" width="195" height="39"/>
+                                <rect key="frame" x="109.5" y="687" width="195" height="39"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule" titleAlignment="center">
+                                <buttonConfiguration key="configuration" style="filled" title="Get Pre-Qualified" cornerStyle="capsule" titleAlignment="center">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </backgroundConfiguration>
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Get Pre-Qualified">
-                                            <attributes>
-                                                <font key="NSFont" size="22" name="Georgia"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <fontDescription key="titleFontDescription" name="Georgia" family="Georgia" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="Yiw-C0-3FJ" kind="show" id="Loq-Tv-AWm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nD-qr-eBe">
-                                <rect key="frame" x="20" y="122" width="374" height="219"/>
+                                <rect key="frame" x="20" y="166" width="374" height="219"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="219" id="N9F-O7-m4g"/>
                                     <constraint firstAttribute="width" constant="374" id="WNY-jA-CNE"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" cornerStyle="medium" titleAlignment="center">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="  Your ">
-                                            <attributes>
-                                                <font key="NSFont" size="23" name="Georgia"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                        <fragment content="Monthly">
-                                            <attributes>
-                                                <font key="NSFont" size="23" name="Georgia-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                        <fragment content=" Payment will be:">
-                                            <attributes>
-                                                <font key="NSFont" size="23" name="Georgia"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <buttonConfiguration key="configuration" style="gray" title="  Your Monthly Payment will be:" cornerStyle="medium" titleAlignment="center">
+                                    <fontDescription key="titleFontDescription" name="Georgia" family="Georgia" pointSize="23"/>
                                     <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </buttonConfiguration>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDz-En-97l">
-                                <rect key="frame" x="20" y="382" width="189" height="28"/>
+                                <rect key="frame" x="20" y="426" width="189" height="28"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Mortgage Details:">
                                         <attributes>
@@ -198,7 +171,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUN-cB-hHz">
-                                <rect key="frame" x="20" y="433" width="157.5" height="21"/>
+                                <rect key="frame" x="20" y="477" width="157.5" height="21"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Mortgage Amount $:">
                                         <attributes>
@@ -210,7 +183,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHF-Vo-CcN">
-                                <rect key="frame" x="20" y="468" width="102" height="21"/>
+                                <rect key="frame" x="20" y="512" width="102" height="21"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Interest Rate:">
                                         <attributes>
@@ -222,7 +195,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCh-k5-i0f">
-                                <rect key="frame" x="20" y="503" width="102" height="21"/>
+                                <rect key="frame" x="20" y="547" width="102" height="21"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Amortization:">
                                         <attributes>
@@ -234,7 +207,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeh-lf-8Ke">
-                                <rect key="frame" x="20" y="538" width="211" height="21"/>
+                                <rect key="frame" x="20" y="582" width="211" height="21"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Interest Cost for the term $:">
                                         <attributes>
@@ -246,7 +219,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYf-Ig-tE7">
-                                <rect key="frame" x="20" y="573" width="158" height="21"/>
+                                <rect key="frame" x="20" y="617" width="158" height="21"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Total Interest Cost $:">
                                         <attributes>
@@ -257,8 +230,8 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField toolTip="Enter amount" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nhF-k9-Ity">
-                                <rect key="frame" x="231" y="461" width="150" height="34"/>
+                            <textField toolTip="Enter amount" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nhF-k9-Ity">
+                                <rect key="frame" x="231" y="505" width="150" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="ATe-3F-AoQ"/>
                                     <constraint firstAttribute="width" constant="150" id="MJ0-25-yRw"/>
@@ -266,8 +239,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
-                            <textField toolTip="Enter amount" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pBv-0q-m0U">
-                                <rect key="frame" x="231" y="496" width="150" height="34"/>
+                            <textField toolTip="Enter amount" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pBv-0q-m0U">
+                                <rect key="frame" x="231" y="540" width="150" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="5R8-b4-0hH"/>
                                     <constraint firstAttribute="height" constant="34" id="DRy-Y6-Iz5"/>
@@ -275,8 +248,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
-                            <textField toolTip="Enter amount" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Iq-9c-eeF">
-                                <rect key="frame" x="231" y="531" width="150" height="34"/>
+                            <textField toolTip="Enter amount" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Iq-9c-eeF">
+                                <rect key="frame" x="231" y="575" width="150" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="WDj-cf-o9u"/>
                                     <constraint firstAttribute="width" constant="150" id="i0O-mY-hhR"/>
@@ -284,8 +257,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
-                            <textField toolTip="Enter amount" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tqe-jv-JEO">
-                                <rect key="frame" x="231" y="566" width="150" height="34"/>
+                            <textField toolTip="Enter amount" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tqe-jv-JEO">
+                                <rect key="frame" x="231" y="610" width="150" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="tQb-6H-hdz"/>
                                     <constraint firstAttribute="height" constant="34" id="x2C-OY-YkY"/>
@@ -293,8 +266,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
-                            <textField toolTip="Enter amount" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ltO-Nz-xoK">
-                                <rect key="frame" x="231" y="426" width="150" height="34"/>
+                            <textField toolTip="Enter amount" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ltO-Nz-xoK">
+                                <rect key="frame" x="231" y="470" width="150" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="CER-y3-3fv"/>
                                     <constraint firstAttribute="height" constant="34" id="roB-Va-ntd"/>
@@ -302,8 +275,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
-                            <textField toolTip="Enter amount" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pa8-MG-VxW">
-                                <rect key="frame" x="67" y="251" width="281" height="45"/>
+                            <textField toolTip="Enter amount" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pa8-MG-VxW">
+                                <rect key="frame" x="67" y="295" width="281" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="GK7-J6-S0L"/>
                                     <constraint firstAttribute="width" constant="281" id="gHT-vj-0cj"/>
@@ -311,6 +284,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Simply2" translatesAutoresizingMaskIntoConstraints="NO" id="joI-Bu-i6M">
+                                <rect key="frame" x="121" y="791" width="172" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rcn-g5-afk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -365,30 +342,79 @@
                             <constraint firstItem="nhF-k9-Ity" firstAttribute="top" secondItem="ltO-Nz-xoK" secondAttribute="bottom" constant="1" id="zzY-gs-i2y"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="gJ0-tc-BbK"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Details" id="8NF-86-QTB" userLabel="Details"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="amortizationPeriod" destination="pBv-0q-m0U" id="FJW-ZB-D7G"/>
                         <outlet property="getPrequalified" destination="tYB-sU-0J8" id="pLn-0q-YUQ"/>
+                        <outlet property="interestCost" destination="5Iq-9c-eeF" id="jV0-hh-eJR"/>
                         <outlet property="interestRate" destination="nhF-k9-Ity" id="7s0-PL-TkC"/>
-                        <outlet property="monthlyPayment" destination="ltO-Nz-xoK" id="u2O-Zs-OLV"/>
+                        <outlet property="monthlyPayment" destination="pa8-MG-VxW" id="fce-Bh-OSx"/>
                         <outlet property="mortgageAmount" destination="ltO-Nz-xoK" id="x0A-ac-eHA"/>
                         <outlet property="totalCost" destination="Tqe-jv-JEO" id="pPw-V1-nt7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wz7-o9-Uxz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="723" y="92"/>
+            <point key="canvasLocation" x="317" y="553"/>
         </scene>
-        <!--Third Screen-->
+        <!--Root View Controller-->
+        <scene sceneID="YBg-MD-lpM">
+            <objects>
+                <tableViewController id="efg-zV-hbT" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="wj2-m7-otn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="oSw-3H-fxI">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oSw-3H-fxI" id="AeE-L0-DAk">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="efg-zV-hbT" id="mdK-Jj-guP"/>
+                            <outlet property="delegate" destination="efg-zV-hbT" id="cYA-2J-OYf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="NZh-3f-EqM"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vDO-gJ-rMk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-562" y="873"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zVu-Z2-vBU">
+            <objects>
+                <navigationController id="qJI-rW-YCh" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="rVV-cN-TSf"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kja-28-HP1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Lc7-c8-OJM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="du9-9f-6o9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1338" y="328"/>
+        </scene>
+        <!--Contact-->
         <scene sceneID="GEK-Lg-q58">
             <objects>
-                <viewController storyboardIdentifier="ThirdScreen" id="Yiw-C0-3FJ" customClass="ThirdScreen" customModule="SimplyMortgageApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ThirdVC" id="Yiw-C0-3FJ" customClass="ThirdScreen" customModule="SimplyMortgageApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TUr-2Q-Nsv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70k-Tu-hkp">
-                                <rect key="frame" x="90.5" y="623" width="233" height="39"/>
+                                <rect key="frame" x="90.5" y="594" width="233" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="39" id="GuG-JF-wiA"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="233" id="LBM-cA-2rz"/>
@@ -396,46 +422,37 @@
                                     <constraint firstAttribute="height" constant="39" id="jjT-9I-FW2"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule" titleAlignment="center">
+                                <buttonConfiguration key="configuration" style="filled" title="New Calculation" cornerStyle="capsule" titleAlignment="center">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </backgroundConfiguration>
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="New Calculation">
-                                            <attributes>
-                                                <font key="NSFont" size="22" name="Georgia"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <fontDescription key="titleFontDescription" name="Georgia" family="Georgia" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="7PR-0V-4OD"/>
+                                    <segue destination="QiN-cz-Ih5" kind="unwind" unwindAction="unwindToFirstVCWithSegue:" id="Did-u4-yR4"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="callcenter2" translatesAutoresizingMaskIntoConstraints="NO" id="TtY-gE-sZc">
-                                <rect key="frame" x="53.5" y="169" width="307" height="166"/>
+                                <rect key="frame" x="53.5" y="213" width="307" height="166"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="166" id="gUa-Jv-ZGG"/>
                                     <constraint firstAttribute="width" constant="307" id="sWc-1K-nEH"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i02-XU-feF">
-                                <rect key="frame" x="0.0" y="430" width="414" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call us from: +1 647 888-8888" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i02-XU-feF">
+                                <rect key="frame" x="0.0" y="474" width="414" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="b2w-N7-svs"/>
                                     <constraint firstAttribute="height" constant="37" id="h9W-3r-h12"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Call us from: +1 647 888-8888">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="23"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="23"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Simply2" translatesAutoresizingMaskIntoConstraints="NO" id="S6t-t1-QGe">
+                                <rect key="frame" x="121" y="787" width="172" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2o7-0L-Qas"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -448,17 +465,19 @@
                             <constraint firstItem="2o7-0L-Qas" firstAttribute="bottom" secondItem="70k-Tu-hkp" secondAttribute="bottom" constant="180" id="jFu-Jt-Gr1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ffk-al-liE"/>
+                    <navigationItem key="navigationItem" title="Contact" id="ffk-al-liE"/>
                     <connections>
                         <outlet property="newCalculation" destination="70k-Tu-hkp" id="KdA-tn-4aa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KyV-fr-YNm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="QiN-cz-Ih5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1862" y="92"/>
+            <point key="canvasLocation" x="1165" y="92"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Simply2" width="980" height="307"/>
         <image name="callcenter2" width="1000" height="1080"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

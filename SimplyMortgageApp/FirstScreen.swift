@@ -7,9 +7,14 @@
 
 import UIKit
 
+
+var a: Int = 0
+
+
 class FirstScreen: UIViewController {
-    @IBOutlet weak var mortgageAmount: UITextField!
     
+
+    @IBOutlet weak var mortgageAmount: UITextField!
     @IBOutlet weak var calculationButton: UIButton!
     
     
@@ -18,6 +23,18 @@ class FirstScreen: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func unwindToFirstVC(segue: UIStoryboardSegue) {
+        
+    }
     
+   
+    @IBAction func amountEntered(_ sender: Any) {
+        
+        a = Int(mortgageAmount.text ?? "") ?? 0
+        print (a)
+                
+    
+    } 
 }
+
 
