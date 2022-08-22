@@ -7,10 +7,13 @@
 
 import UIKit
 
-var b = a
-
 class SecondScreen: UIViewController {
     
+    var mortgage: Double = 0.00
+    var pvFactor: Double = 163.2061767
+    var rate: Double = 5.54
+    var payment: Double = 0.00
+    var fvFactor: Double = 0.89240564
   
     @IBOutlet weak var monthlyPayment: UITextField!
     @IBOutlet weak var mortgageAmount: UITextField!
@@ -24,12 +27,13 @@ class SecondScreen: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        monthlyPayment.text = "\(b / 300)"
-        mortgageAmount.text = "\(b)"
-        interestRate.text = "5.340%"
+        payment = mortgage / pvFactor
+        monthlyPayment.text = "\(mortgage / pvFactor)"
+        mortgageAmount.text = "\(mortgage)"
+        interestRate.text = "\(rate)"
         amortizationPeriod.text = "25 years"
-        interestCost.text = "\(b / 5)"
-        totalCost.text = "\(b / 2)"
+        interestCost.text = "\(payment * 60 - (mortgage - mortgage * fvFactor))"
+        totalCost.text = "\(payment * 300 - mortgage)"
         
     }
     

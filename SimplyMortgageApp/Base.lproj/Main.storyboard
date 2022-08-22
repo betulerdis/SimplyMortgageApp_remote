@@ -61,9 +61,6 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
-                                <connections>
-                                    <action selector="amountEntered:" destination="BYZ-38-t0r" eventType="editingChanged" id="ec7-E8-ycd"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUo-L8-yMG">
                                 <rect key="frame" x="90.5" y="643" width="233" height="39"/>
@@ -79,10 +76,11 @@
                                     <fontDescription key="titleFontDescription" name="Georgia" family="Georgia" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Co2-0S-Jbk" kind="show" identifier="runCalculation" id="pad-8a-Pz8"/>
+                                    <action selector="calculatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NAk-02-H4S"/>
+                                    <segue destination="Co2-0S-Jbk" kind="show" identifier="runCalculation" id="AR7-iT-grh"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly payment is calculated at a 5-year fixed  interest rate of 5.340%, amortized over 25 years." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyu-F7-oG4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly payment is calculated at a 5-year fixed  interest rate of 5.540%, amortized over 25 years." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyu-F7-oG4">
                                 <rect key="frame" x="30" y="484" width="349" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="349" id="GBx-cr-2f7"/>
@@ -99,6 +97,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="2J5-cA-iyg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="106" id="BqV-dN-Niv"/>
                             <constraint firstItem="85y-9b-jFR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="GMS-wL-aYB"/>
@@ -114,6 +113,9 @@
                             <constraint firstItem="2J5-cA-iyg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="rF0-Mw-WvZ"/>
                             <constraint firstItem="d3n-ga-Zds" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="uel-vW-zin"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="iFY-BV-C1w" appends="YES" id="KpF-VA-NSg"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="lDF-1z-s8w"/>
                     <connections>
@@ -122,6 +124,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="iFY-BV-C1w">
+                    <connections>
+                        <action selector="dismissKeyboardWith_sender:" destination="BYZ-38-t0r" id="HQM-DL-dtO"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-541" y="229"/>
         </scene>
@@ -153,8 +160,8 @@
                                     <constraint firstAttribute="width" constant="374" id="WNY-jA-CNE"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="  Your Monthly Payment will be:" cornerStyle="medium" titleAlignment="center">
-                                    <fontDescription key="titleFontDescription" name="Georgia" family="Georgia" pointSize="23"/>
+                                <buttonConfiguration key="configuration" style="gray" title="  Your Monthly Payment will be ($):" cornerStyle="medium" titleAlignment="center">
+                                    <fontDescription key="titleFontDescription" name="Georgia" family="Georgia" pointSize="22"/>
                                     <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </buttonConfiguration>
                             </button>
@@ -183,9 +190,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHF-Vo-CcN">
-                                <rect key="frame" x="20" y="512" width="102" height="21"/>
+                                <rect key="frame" x="20" y="512" width="133" height="21"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Interest Rate:">
+                                    <fragment content="Interest Rate (%):">
                                         <attributes>
                                             <font key="NSFont" metaFont="system" size="17"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
