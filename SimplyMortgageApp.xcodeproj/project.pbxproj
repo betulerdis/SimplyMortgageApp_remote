@@ -15,6 +15,7 @@
 		694ED0742880500A0015D69C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694ED0722880500A0015D69C /* LaunchScreen.storyboard */; };
 		694ED07C288050BC0015D69C /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694ED07B288050BC0015D69C /* SecondScreen.swift */; };
 		694ED07E288050D70015D69C /* ThirdScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694ED07D288050D70015D69C /* ThirdScreen.swift */; };
+		A0B631C028A27AEB0024F5C5 /* FEEDBACK - You can delete after reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B631BF28A27AEB0024F5C5 /* FEEDBACK - You can delete after reading.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		694ED0752880500A0015D69C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		694ED07B288050BC0015D69C /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
 		694ED07D288050D70015D69C /* ThirdScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreen.swift; sourceTree = "<group>"; };
+		A0B631BF28A27AEB0024F5C5 /* FEEDBACK - You can delete after reading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FEEDBACK - You can delete after reading.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		694ED066288050090015D69C /* SimplyMortgageApp */ = {
 			isa = PBXGroup;
 			children = (
+				A0B631BF28A27AEB0024F5C5 /* FEEDBACK - You can delete after reading.swift */,
 				694ED067288050090015D69C /* AppDelegate.swift */,
 				694ED069288050090015D69C /* SceneDelegate.swift */,
 				694ED06B288050090015D69C /* FirstScreen.swift */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B631C028A27AEB0024F5C5 /* FEEDBACK - You can delete after reading.swift in Sources */,
 				694ED06C288050090015D69C /* FirstScreen.swift in Sources */,
 				694ED07C288050BC0015D69C /* SecondScreen.swift in Sources */,
 				694ED07E288050D70015D69C /* ThirdScreen.swift in Sources */,
