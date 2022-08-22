@@ -11,7 +11,15 @@ import UIKit
 class FirstScreen: UIViewController {
     
     var mortgage: Double = 0.00
-
+    
+    let formatter: NumberFormatter = {
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .currency
+            formatter.maximumFractionDigits = 2
+            formatter.roundingMode = .ceiling
+            return formatter
+    }()
+    
     @IBOutlet weak var mortgageAmount: UITextField!
     @IBOutlet weak var calculationButton: UIButton!
     
