@@ -28,7 +28,10 @@ class FirstScreen: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        mortgageAmount.text = ""
+    }
     @IBAction func unwindToFirstVC(segue: UIStoryboardSegue) {
         
     }
@@ -40,7 +43,7 @@ class FirstScreen: UIViewController {
     
     @IBAction func calculatePressed(_ sender: Any) {
         
-        performSegue(withIdentifier: "runCalculation", sender: self)
+        //performSegue(withIdentifier: "runCalculation", sender: self)
         
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
