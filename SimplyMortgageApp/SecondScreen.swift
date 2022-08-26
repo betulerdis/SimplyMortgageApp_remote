@@ -17,7 +17,7 @@ class SecondScreen: UIViewController {
     
     let formatter: NumberFormatter = {
             let formatter = NumberFormatter()
-            formatter.numberStyle = .currency
+            formatter.numberStyle = .decimal
             formatter.maximumFractionDigits = 2
             formatter.roundingMode = .ceiling
             return formatter
@@ -36,12 +36,12 @@ class SecondScreen: UIViewController {
         // Do any additional setup after loading the view.
         
         payment = mortgage / pvFactor
-        monthlyPayment.text = "\((mortgage / pvFactor).formatted())"
-        mortgageAmount.text = "\(mortgage.formatted())"
+        monthlyPayment.text = "\((mortgage / pvFactor).formatted(.currency (code: "usd")))"
+        mortgageAmount.text = "\(mortgage.formatted(.currency (code: "usd")))"
         interestRate.text = "\(rate)"
         amortizationPeriod.text = "25 years"
-        interestCost.text = "\((payment * 60 - (mortgage - mortgage * fvFactor)).formatted())"
-        totalCost.text = "\((payment * 300 - mortgage).formatted())"
+        interestCost.text = "\((payment * 60 - (mortgage - mortgage * fvFactor)).formatted(.currency (code: "usd")))"
+        totalCost.text = "\((payment * 300 - mortgage).formatted(.currency (code: "usd")))"
         
         
     }

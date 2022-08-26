@@ -160,7 +160,7 @@
                                     <constraint firstAttribute="width" constant="374" id="WNY-jA-CNE"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="  Your Monthly Payment will be ($):" cornerStyle="medium" titleAlignment="center">
+                                <buttonConfiguration key="configuration" style="gray" title="  Your Monthly Payment will be:" cornerStyle="medium" titleAlignment="center">
                                     <fontDescription key="titleFontDescription" name="Georgia" family="Georgia" pointSize="22"/>
                                     <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </buttonConfiguration>
@@ -178,9 +178,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUN-cB-hHz">
-                                <rect key="frame" x="20" y="477" width="157" height="21"/>
+                                <rect key="frame" x="20" y="477" width="143" height="21"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Mortgage Amount $:">
+                                    <fragment content="Mortgage Amount:">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="17" name="Georgia"/>
@@ -216,9 +216,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeh-lf-8Ke">
-                                <rect key="frame" x="20" y="582" width="211" height="21"/>
+                                <rect key="frame" x="20" y="582" width="196" height="21"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Interest Cost for the term $:">
+                                    <fragment content="Interest Cost for the term:">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="17" name="Georgia"/>
@@ -229,10 +229,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYf-Ig-tE7">
-                                <rect key="frame" x="20" y="617" width="159.5" height="21"/>
+                                <rect key="frame" x="20" y="617" width="145" height="21"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Total Interest Cost $:">
+                                    <fragment content="Total Interest Cost:">
                                         <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="17" name="Georgia"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
