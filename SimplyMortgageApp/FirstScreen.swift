@@ -42,9 +42,10 @@ class FirstScreen: UIViewController {
     
     
     @IBAction func calculatePressed(_ sender: Any) {
-        
         //performSegue(withIdentifier: "runCalculation", sender: self)
-        
+        if Double(mortgageAmount.text ?? "") == nil {
+        showAlert()
+        }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if segue.identifier == "runCalculation" {
@@ -54,6 +55,14 @@ class FirstScreen: UIViewController {
                 
             }
         }
+    }
+    
+    func showAlert() {
+        let alert = UIAlertController(title: "Alert", message: "Please enter a valid amount.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { action in
+            print("Tapped OK")
+        }))
+        present(alert, animated:true)
     }
 }
 
