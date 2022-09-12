@@ -481,6 +481,9 @@
                                     </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" name="Georgia" family="Georgia" pointSize="22"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="simplyCall:" destination="Yiw-C0-3FJ" eventType="touchUpInside" id="CGu-f7-FYL"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVi-T9-NAL">
                                 <rect key="frame" x="15" y="354" width="361" height="108"/>
@@ -530,6 +533,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Contact" id="ffk-al-liE"/>
                     <connections>
+                        <outlet property="callButton" destination="QiH-6d-LfS" id="WTt-g2-3s5"/>
                         <outlet property="newCalculation" destination="70k-Tu-hkp" id="KdA-tn-4aa"/>
                     </connections>
                 </viewController>
